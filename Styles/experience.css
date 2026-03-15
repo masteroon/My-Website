@@ -1,0 +1,161 @@
+.experience-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-page-title{
+  margin-top: 100px;
+  font-family: Arial;
+  font-weight: 800;
+  font-size: 74px;
+  background: linear-gradient(
+    90deg,
+    rgb(32, 227, 255),   
+    rgb(107, 232, 200) 35%,  
+    rgb(207, 226, 122) 65%, 
+    rgb(255, 212, 0)    
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 40px;
+}
+
+.main-category-button {
+  font-family: unlock;
+  display: flex;
+  align-items: center;
+  font-size: 58px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.text-decoration{
+  text-decoration: underline;
+
+}
+
+
+.main-category-image{
+  height: 100px;
+}
+
+.main-category-text {
+  margin-left: -25px;
+ 
+}
+
+.glow-text{
+  color: #fff; 
+  text-shadow: 0 0 5px white; 
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.glow-text:hover{
+  text-shadow: 
+    0 0 10px white, 
+    0 0 30px rgb(70, 230, 228),
+    0 0 60px rgb(70, 230, 228) 
+}
+
+
+
+.inner-category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.experience-button{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border:none;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+
+.image-container {
+  width: 250px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-logo{
+  height: 50px;
+  width: 200px;
+  
+}
+
+.html-css-logo{
+  height: 100px;
+  width: 150px;
+}
+
+.javascript-logo{
+  height: 100px;
+}
+
+.sce-logo {
+  margin-left: 18px;
+}
+.inner-category-text{
+  font-family: unlock, Arial;
+  font-size: 40px;
+}
+
+.experience-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 700px;
+}
+
+.experience-text{
+  margin-bottom: 30px;
+  font-family: Arial;
+  font-size: 16px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-text p {
+  margin-bottom: 20px;
+  line-height: 22px;
+}
+
+.experience-title {
+  font-family: unlock;
+  font-size: 36px;
+  margin-right: 10px;
+}
+
+.git-hub-link{
+  font-weight:700;
+  color: white;
+  text-decoration: none;
+}
+
+.hidden{
+  display:none;
+}
+

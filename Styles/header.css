@@ -1,0 +1,448 @@
+
+
+.header {
+  display: flex;
+  position: fixed;
+  height: 100px;
+  top: 0;
+  right:0;
+  left: 0;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  z-index: 200;
+  background:
+    linear-gradient(black, black) padding-box,
+    linear-gradient(
+      90deg,
+      rgb(32, 227, 255),
+      rgb(107, 232, 200) 25%,
+      rgb(207, 226, 122) 55%,
+      rgb(255, 212, 0)
+    ) border-box;
+
+  border-bottom: 1px solid transparent;
+
+}
+
+.website-title-container {
+  Font-family: Arial;
+  font-weight: Bold;
+  font-size: 36px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.website-title {
+  display: inline-block;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 36px;
+
+  background: linear-gradient(
+    90deg,
+    rgb(32, 227, 255),   
+    rgb(107, 232, 200) 35%,  
+    rgb(207, 226, 122) 65%,  
+    rgb(255, 212, 0)    
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.about-icon-button-container,
+.experience-icon-button-container,
+.projects-icon-button-container,
+.skills-icon-button-container,
+.resume-icon-button-container,
+.contact-icon-button-container,
+.linkedin-icon-button-container
+{
+  position: relative;
+  padding-left:10px;
+  padding-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.15s, color 0.15s;
+
+  
+}
+
+.about-icon-button-container:hover{
+  background-color: rgb(16, 114, 128);
+  border-bottom:none;
+}
+
+.about-icon-button-container:active {
+  background-color: rgb(32, 227, 255);
+  color: black;
+}
+.experience-icon-button-container:hover {
+  background-color: rgb(35, 115, 114);
+}
+
+.experience-icon-button-container:active {
+  background-color: rgb(70, 230, 228);
+  color: black;
+}
+
+.projects-icon-button-container:hover {
+  background-color: rgb(54, 116, 100);
+}
+
+.projects-icon-button-container:active {
+  background-color: rgb(107, 232, 200);
+  color: black;
+}
+
+.skills-icon-button-container:hover {
+  background-color: rgb(79, 115, 81);
+}
+
+.skills-icon-button-container:active {
+  background-color: rgb(157,229 ,161);
+  color: black;
+}
+
+.resume-icon-button-container:hover {
+  background-color: rgb(104, 113, 61);
+}
+
+.resume-icon-button-container:active {
+  background-color: rgb(207, 226, 122);
+  color: black;
+}
+
+.contact-icon-button-container:hover {
+  background-color: rgb(116, 110, 31);
+}
+
+.contact-icon-button-container:active {
+  background-color: rgb(231, 219, 61);
+  color: black;
+}
+
+.linkedin-icon-button-container:hover {
+  background-color: rgba(128, 106, 0);
+}
+
+.linkedin-icon-button-container:active {
+  background-color: rgb(255, 212, 0);
+  color: black;
+}
+
+.header-item-tooltip {
+  display: flex;
+  position: absolute;
+  background-color: black;
+  top: calc(100% - 1px);
+  left: 0;
+  right: 0;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  padding: 5px;
+}
+
+.about-icon-button-container .header-item-tooltip,
+.experience-icon-button-container .header-item-tooltip,
+.projects-icon-button-container .header-item-tooltip,
+.skills-icon-button-container .header-item-tooltip,
+.resume-icon-button-container .header-item-tooltip,
+.contact-icon-button-container .header-item-tooltip,
+.linkedin-icon-button-container .header-item-tooltip {
+  opacity: 0;
+  border-top: none;
+  pointer-events: none;
+  transition: background-color 0.15s, opacity 0.15s, box-shadow 0.15s;
+}
+.about-icon-button-container .header-item-tooltip {
+  border-left-color: rgb(70, 230, 228);
+  border-right-color: rgb(70, 230, 228);
+  border-bottom-color: rgb(70, 230, 228);
+  background-color: rgb(16, 114, 128);
+  box-shadow: 0px 5px 5px rgba(70, 230, 228, 0.4);
+}
+
+.experience-icon-button-container .header-item-tooltip {
+  border-left-color: rgb(107, 232, 200);
+  border-right-color: rgb(107, 232, 200);
+  border-bottom-color: rgb(107, 232, 200);
+  background-color: rgb(35, 115, 114);
+  box-shadow: 0px 5px 5px rgba(107, 232, 200, 0.4);
+}
+
+.projects-icon-button-container .header-item-tooltip {
+  border-left-color: rgb(157,229 ,161);
+  border-right-color: rgb(157,229 ,161);
+  border-bottom-color: rgb(157,229 ,161);
+  background-color: rgb(54, 116, 100);
+  box-shadow: 0px 5px 5px rgba(157,229 ,161, 0.4);
+}
+
+.skills-icon-button-container .header-item-tooltip {
+  border-left-color: rgb(207, 226, 122);
+  border-right-color: rgb(207, 226, 122);
+  border-bottom-color: rgb(207, 226, 122);
+  background-color: rgb(79, 115, 81);
+  box-shadow: 0px 5px 5px rgba(207, 226, 122, 0.4);
+}
+
+.resume-icon-button-container .header-item-tooltip {
+  border-left-color: rgb(231, 219, 61);
+  border-right-color: rgb(231, 219, 61);
+  border-bottom-color: rgb(231, 219, 61);
+  background-color: rgb(104, 113, 61);
+  box-shadow: 0px 5px 5px rgba(231, 219, 61, 0.4);
+}
+
+.contact-icon-button-container .header-item-tooltip {
+  border-left-color: rgb(255, 212, 0);
+  border-right-color: rgb(255, 212, 0);
+  border-bottom-color: rgb(255, 212, 0);
+  background-color: rgb(116, 110, 31);
+  box-shadow: 0px 5px 5px rgba(255, 212, 0, 0.4);
+}
+
+.linkedin-icon-button-container .header-item-tooltip {
+  border-left-color: rgb(255, 174, 0);
+  border-right-color: rgb(255, 174, 0);
+  border-bottom-color: rgb(255, 174, 0);
+  background-color: rgb(128, 106, 0);
+  box-shadow: 0px 5px 5px rgba(255, 174, 0, 0.4);
+}
+
+.about-icon-button-container:active .header-item-tooltip{
+  background-color: rgb(32, 227, 255);
+}
+
+.experience-icon-button-container:active .header-item-tooltip{
+  background-color: rgb(70, 230, 228);
+}
+
+.projects-icon-button-container:active .header-item-tooltip{
+  background-color: rgb(107, 232, 200);
+}
+
+.skills-icon-button-container:active .header-item-tooltip{
+  background-color: rgb(157,229 ,161);
+}
+
+.resume-icon-button-container:active .header-item-tooltip{
+  background-color: rgb(207, 226, 122);
+}
+
+.contact-icon-button-container:active .header-item-tooltip{
+  background-color: rgb(231, 219, 61);
+}
+
+.linkedin-icon-button-container:active .header-item-tooltip{
+  background-color: rgb(255, 212, 0);
+}
+
+
+.about-icon-button-container:hover .header-item-tooltip,
+.experience-icon-button-container:hover .header-item-tooltip,
+.projects-icon-button-container:hover .header-item-tooltip,
+.skills-icon-button-container:hover .header-item-tooltip,
+.resume-icon-button-container:hover .header-item-tooltip,
+.contact-icon-button-container:hover .header-item-tooltip,
+.linkedin-icon-button-container:hover .header-item-tooltip {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.about-icon-button-container:active .header-link,
+.experience-icon-button-container:active .header-link,
+.projects-icon-button-container:active .header-link,
+.skills-icon-button-container:active .header-link,
+.resume-icon-button-container:active .header-link,
+.contact-icon-button-container:active .header-link,
+.linkedin-icon-button-container:active .header-link {
+  color: black;
+}
+
+.header-icon,
+.header-icon-active{
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  object-position: center;
+  display: none;
+}
+
+.header-text {
+  font-size: 24px;
+  color: inherit;
+  
+}
+
+@media (max-width: 1040px) {
+  .header-icon {
+    display: inline;
+  }
+
+  .header-text {
+    display: none;
+  }
+
+  .about-icon-button-container:active .header-icon-active,
+  .experience-icon-button-container:active .header-icon-active,
+  .projects-icon-button-container:active .header-icon-active,
+  .skills-icon-button-container:active .header-icon-active,
+  .resume-icon-button-container:active .header-icon-active,
+  .contact-icon-button-container:active .header-icon-active,
+  .linkedin-icon-button-container:active .header-icon-active
+  {
+    display:inline;
+  }
+
+  .about-icon-button-container:active .header-icon,
+  .experience-icon-button-container:active .header-icon,
+  .projects-icon-button-container:active .header-icon,
+  .skills-icon-button-container:active .header-icon,
+  .resume-icon-button-container:active .header-icon,
+  .contact-icon-button-container:active .header-icon,
+  .linkedin-icon-button-container:active .header-icon {
+    display:none;
+  }
+
+  .about-active-button .header-icon {
+    display: none;
+  }
+
+  .about-active-button .header-icon-active {
+    display: inline;
+  }
+
+}
+
+@media (max-width: 1040px) and (min-width: 900px) {
+    .header-item-tooltip{
+    font-size: 12px;
+  }
+}
+
+@media (max-width:899.99px) {
+  .header-item-tooltip {
+    font-size: 8px;
+  }
+}
+
+.header-link{
+  text-decoration: none;
+  color: white;
+}
+
+.header-link:active{
+  color: black;
+}
+
+
+.about-active-button .header-link,
+.experience-active-button .header-link,
+.projects-active-button .header-link,
+.skills-active-button .header-link,
+.resume-active-button .header-link,
+.contact-active-button .header-link,
+.linkedin-active-button .header-link{
+  color: black;
+}
+
+.about-active-button .header-item-tooltip,
+.experience-active-button .header-item-tooltip,
+.projects-active-button .header-item-tooltip,
+.skills-active-button .header-item-tooltip,
+.resume-active-button .header-item-tooltip,
+.contact-active-button .header-item-tooltip,
+.linkedin-active-button .header-item-tooltip   {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.about-active-button:hover {
+  background-color: rgb(32, 227,255);
+}
+
+.about-active-button .header-item-tooltip,
+.experience-active-button .header-item-tooltip,
+.projects-active-button .header-item-tooltip,
+.skills-active-button .header-item-tooltip,
+.resume-active-button .header-item-tooltip,
+.contact-active-button .header-item-tooltip,
+.linkedin-active-button .header-item-tooltip{
+  display: none;
+}
+
+
+.about-active-button{
+  background-color:  rgb(32, 227, 255);
+}
+
+
+.experience-active-button:hover {
+  background-color: rgb(70, 230, 228);
+}
+
+.experience-active-button{
+  background-color:  rgb(70, 230, 228);
+}
+
+.projects-active-button:hover {
+  background-color:  rgb(107, 232, 200);
+}
+
+
+.projects-active-button{
+  background-color:   rgb(107, 232, 200);
+}
+
+.skills-active-button:hover {
+  background-color:  rgb(157,229 ,161);
+}
+
+
+.skills-active-button{
+  background-color: rgb(157,229 ,161);;
+}
+
+.resume-active-button:hover {
+  background-color:  rgb(207, 226, 122);
+}
+
+
+.resume-active-button{
+  background-color: rgb(207, 226, 122);
+}
+
+.contact-active-button:hover {
+  background-color:  rgb(231, 219, 61);
+}
+
+
+.contact-active-button{
+  background-color: rgb(231, 219, 61);
+}
+
+.linkedin-active-button:hover {
+  background-color:  rgb(255, 212, 0);
+}
+
+.linkedin-active-button{
+  background-color: rgb(255, 212, 0);
+}
+
+

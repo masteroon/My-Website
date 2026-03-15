@@ -1,0 +1,143 @@
+.about-page{
+  display: flex;
+  flex-direction: column;
+  padding-top: 90px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-page-title{
+  font-family: Arial;
+  font-weight: 800;
+
+  background: linear-gradient(
+    90deg,
+    rgb(32, 227, 255),   
+    rgb(107, 232, 200) 35%,  
+    rgb(207, 226, 122) 65%, 
+    rgb(255, 212, 0)    
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.about-text{
+  font-family: Arial;
+  color: white;
+  line-height: 26px;
+  margin-bottom: 22px;
+  font-weight: 500;
+}
+
+.about-content-container {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+
+
+@media (min-width: 1200px){
+  .about-image-container{
+    margin-right: 60px;
+    margin-left: 60px;
+    position: relative;
+    border-radius: 5px;
+  }
+  .about-image{
+    height: 450px;
+    width: 300px;
+    object-position: center;
+    object-fit: cover;
+    display: block;
+
+  }
+
+    .about-image-shadow-1 {
+    box-shadow: 0 0 7px rgba(32, 227, 255, 0.9);
+  }
+
+  .about-image-shadow-2 {
+    box-shadow: 0 0 7px rgba(32, 227, 255, 0.7);
+  }
+
+  .about-image-shadow-3 {
+    box-shadow: 0 0 7px rgba(32, 227, 255, 0.8);
+  }
+
+  .about-image-shadow-4 {
+    box-shadow: 0 0 7px rgba(32, 227, 255, 0.6);
+  }
+
+  .toggle-animation-button{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor:pointer;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .about-page {
+    padding-right: 400px;
+
+  }
+
+  .about-page-title{
+    margin-left: 400px;
+  }
+  .about-content-container{
+    max-width: 90%;
+  }
+
+  .about-page-title{
+    font-size: 74px;
+  }
+
+  .about-text{
+    font-size: 18px;
+  }
+
+}
+
+@media(max-width: 1199.9px){
+  .about-image-container{
+    display: none;
+    pointer-events: none;
+  }
+
+  .about-image{
+    display: none;
+    pointer-events: none;
+
+  }
+  .toggle-animation-button{
+    display: none;
+    pointer-events: none;
+  }
+  .about-content-container{
+    max-width: 400px;
+  }
+  .about-page-title{
+    font-size: 48px;
+  }
+
+  .about-text{
+    font-size: 16px;
+  }
+}
+
+
+
+
