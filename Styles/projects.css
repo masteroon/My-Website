@@ -1,0 +1,31 @@
+.projects-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.projects-page-title{
+  margin-top: 100px;
+  font-family: Arial;
+  font-weight: 800;
+  font-size: 74px;
+  background: linear-gradient(
+    90deg,
+    rgb(32, 227, 255),   
+    rgb(107, 232, 200) 35%,  
+    rgb(207, 226, 122) 65%, 
+    rgb(255, 212, 0)    
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 40px;
+}
+
+.projects-title {
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+

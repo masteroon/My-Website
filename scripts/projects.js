@@ -1,10 +1,18 @@
 import { generateHeader } from "./header.js";
+import { projects } from "../data/projectsData.js";
 
-const projects = [{
-  name: 
-}];
 
 function generateProjectsPage(){
-  generateHeader();
+  const smallProjects = [];
+  const largeProjects = [];
+  projects.forEach(project=>{
+    if(project.size === 'small'){
+      smallProjects.push(project);
+    }
+    else{
+      largeProjects.push(project);
+    }
+  });
+
   
 }

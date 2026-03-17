@@ -3,7 +3,6 @@ import { generateHeader } from "./header.js";
 generateExperiencePage();
 
 function generateExperiencePage(){
-  generateHeader();
   const workButton = document.querySelector('.js-work-text');
   const educationButton = document.querySelector('.js-education-text');
   const experienceButtons = document.querySelectorAll('.js-inner-category');

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>
+      Calculator
+    </title>
+
+    <body>
+      <p>
+        Calculator
+      </p>
+
+      <p class="js-display">
+
+      </p>
+
+      <p>
+        <button onclick="
+          updateCalculation('1');
+          ">
+          1
+        </button>
+
+        <button onclick="
+          updateCalculation('2');
+          ">
+          2
+        </button>
+
+        <button onclick="
+          updateCalculation('3');
+          ">
+          3
+        </button>
+
+        <button onclick="
+          updateCalculation(' + ');
+          ">
+          +
+          </button>
+      </p>
+
+      <p>
+        <button onclick="
+          updateCalculation('4');
+          ">
+          4
+        </button>
+
+        <button onclick="
+          updateCalculation('5');
+          ">
+          5
+        </button>
+
+        <button onclick="
+          updateCalculation('6');
+          ">
+          6
+        </button>
+
+        <button onclick="
+          updateCalculation(' - ');
+          ">
+          -
+          </button>
+      </p>
+
+   
+      <p>
+        <button onclick="
+          updateCalculation('7');
+          ">
+          7
+        </button>
+
+        <button onclick="
+          updateCalculation('8');
+          ">
+          8
+        </button>
+
+        <button onclick="
+          updateCalculation('9');
+          ">
+          9
+        </button>
+
+        <button onclick="
+          updateCalculation(' * ');
+          ">
+          *
+        </button>
+      </p>
+
+      <p>
+        <button onclick="
+          updateCalculation('0');
+          ">
+          0
+        </button>
+
+         <button onclick="
+          updateCalculation('.');
+          ">
+          .
+        </button>
+
+        <button onclick="
+          calculation = eval(calculation);
+          updateDisplay();
+          updateLocalStorage('save','calculation', calculation);
+          ">
+          =
+        </button>
+
+        <button onclick="
+          updateCalculation(' / ');
+          ">
+          /
+        </button>
+      </p>
+
+      <p>
+        <button onclick="
+          calculation = '';
+          console.log('Cleared.');
+          updateLocalStorage('remove','calculation');
+          updateDisplay();
+          ">
+          clear
+        </button>
+      </p>
+
+      <script>
+        let calculation = '';
+        calculation = updateLocalStorage('load','calculation');
+        updateDisplay();
+
+        function updateCalculation(operator) {
+          calculation += operator
+          updateDisplay();
+          updateLocalStorage ('save','calculation',calculation);
+        }
+
+
+        function updateLocalStorage(state, key, item=''){
+          
+          if(state === 'save'){
+            localStorage.setItem(key, JSON.stringify(item));
+            return;
+          }
+          else if (state === 'load') {
+            calculation = JSON.parse(localStorage.getItem(key));
+            if (!calculation){
+              return '';
+            }
+            return calculation;
+          }
+          else if (state === 'remove') {
+            localStorage.removeItem(key);
+          }
+          return;
+        }
+
+        function updateDisplay() {
+          document.querySelector('.js-display').innerHTML = calculation;
+        }
+      </script>
+    </body>
+  </head>
+</html>

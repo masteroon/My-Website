@@ -1,0 +1,131 @@
+.animation-overlay{
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+
+  background: transparent;
+
+  opacity: 0;
+
+  will-change: opacity, transform, filter, background;
+}
+
+
+
+
+.lightning-flash{
+  animation: lightningFlash 1500ms linear;
+}
+
+@keyframes lightningFlash{
+  0%   { opacity: 0; background: white; }
+  10%  { opacity: 0.9; }
+  20%  { opacity: 0.1; }
+  30%  { opacity: 0.8; }
+  40%  { opacity: 0.2; }
+  100% { opacity: 0; }
+}
+
+.gold-shine{
+  animation: goldShine 4500ms ease-out;
+}
+
+@keyframes goldShine{
+  0%   { opacity: 0; background: rgb(255,196,0); }
+  20%  { opacity: 0.6; }
+  50%  { opacity: 0.3; }
+  80%  { opacity: 0.5; }
+  100% { opacity: 0; }
+}
+
+.freeze-blast{
+  animation: freezeBlast 2500ms ease-out;
+  background: radial-gradient(circle at center,
+    rgba(170, 230, 255, 0.55) 0%,
+    rgba(80, 190, 255, 0.25) 35%,
+    rgba(0, 70, 120, 0.12) 70%,
+    transparent 100%
+  );
+}
+
+@keyframes freezeBlast{
+  0%   { opacity: 0; transform: scale(1); filter: blur(0px); }
+  12%  { opacity: 0.35; transform: scale(1.02); filter: blur(0.2px); }
+  35%  { opacity: 0.65; transform: scale(1); filter: blur(0px); }
+  55%  { opacity: 0.85; transform: scale(1.01); }
+  75%  { opacity: 0.55; transform: scale(1.05);}
+  100% { opacity: 0; transform: scale(1); }
+}
+
+.screen-shake{
+  animation: screenShake 350ms linear;
+}
+
+@keyframes screenShake{
+  0%  { transform: translate(0px, 0px); }
+  10% { transform: translate(-4px, 2px); }
+  20% { transform: translate(3px, -3px); }
+  30% { transform: translate(-2px, 4px); }
+  40% { transform: translate(4px, 1px); }
+  50% { transform: translate(-3px, -2px); }
+  60% { transform: translate(2px, 3px); }
+  70% { transform: translate(-4px, -1px); }
+  80% { transform: translate(3px, 2px); }
+  90% { transform: translate(-2px, -3px); }
+  100%{ transform: translate(0px, 0px); }
+}
+
+.vision-distort{
+  animation: visionDistort 900ms ease-in-out;
+}
+
+@keyframes visionDistort{
+  0%{
+    filter: blur(0px) contrast(1) brightness(1);
+    transform: scale(1);
+  }
+
+  20%{
+    filter: blur(3px) contrast(0.9) brightness(1.1);
+    transform: scale(1.01);
+  }
+
+  45%{
+    filter: blur(0.5px) contrast(1.4) brightness(1.15);
+    transform: scale(1.005);
+  }
+
+  70%{
+    filter: blur(2px) contrast(0.85) brightness(1.1);
+    transform: scale(1.01);
+  }
+
+  100%{
+    filter: blur(0px) contrast(1) brightness(1);
+    transform: scale(1);
+  }
+}
+
+.tax-drain{
+  animation: taxDrain 1100ms linear;
+}
+
+.tax-tilt{
+  animation: taxTilt 700ms ease-in-out;
+  transform-origin: center center;
+}
+
+@keyframes taxTilt{
+  0%  { transform: rotate(0deg) translateX(0); }
+
+  15% { transform: rotate(-2deg) translateX(-6px); }
+  30% { transform: rotate(2deg)  translateX(6px); }
+
+  45% { transform: rotate(-1.5deg) translateX(-4px); }
+  60% { transform: rotate(1.5deg)  translateX(4px); }
+
+  75% { transform: rotate(-0.8deg) translateX(-2px); }
+  90% { transform: rotate(0.8deg)  translateX(2px); }
+
+  100%{ transform: rotate(0deg) translateX(0); }
+}
