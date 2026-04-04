@@ -1,0 +1,38 @@
+.skills-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skills-page-title{
+  margin-top: 100px;
+  font-family: Arial;
+  font-weight: 800;
+  font-size: 74px;
+  background: linear-gradient(
+    90deg,
+    rgb(32, 227, 255),   
+    rgb(107, 232, 200) 35%,  
+    rgb(207, 226, 122) 65%, 
+    rgb(255, 212, 0)    
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 40px;
+}
+
+.skills-category{
+  font-size: 48px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.glow-text:hover{
+  text-shadow: 
+      0 0 10px white, 
+      0 0 30px rgb(70, 230, 228),
+      0 0 60px rgb(70, 230, 228) 
+}

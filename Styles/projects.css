@@ -48,12 +48,44 @@
   z-index: 200;
 }
 
-.project-link:hover .glow-text{
+
+.project-link:hover .orange-glow {
   text-shadow: 
-      0 0 10px white, 
-      0 0 30px rgb(70, 230, 228),
-      0 0 60px rgb(70, 230, 228) 
+    0 0 10px rgb(255, 255, 255),
+    0 0 30px rgb(255, 153, 0),
+    0 0 60px rgb(255, 153, 0);
 }
+
+.project-link:hover .red-glow {
+   text-shadow: 
+    0 0 10px rgb(255, 255, 255),
+    0 0 30px rgb(255, 0, 0),
+    0 0 60px rgb(255, 0, 0);
+}
+
+.project-link:hover .cyan-glow {
+   text-shadow: 
+    0 0 10px rgb(255, 255, 255),
+    0 0 30px rgb(0, 255, 204),
+    0 0 60px rgb(0, 204, 255);
+}
+
+.project-link:hover .purple-glow {
+  text-shadow: 
+    0 0 10px rgb(255, 255, 255),
+    0 0 30px rgb(179, 102, 255),
+    0 0 60px rgb(179, 102, 255);
+}
+
+.project-link:hover .blue-glow {
+  text-shadow: 
+    0 0 10px rgb(255, 255, 255),
+    0 0 30px rgb(77, 166, 255),
+    0 0 60px rgb(77, 166, 255);
+}
+
+
+
 
 .project-image-container:hover .tooltip{
   opacity: 1;
@@ -89,28 +121,40 @@
   gap: 30px;
 }
 
-.project-image {
-  display: block;
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  object-position: top left;
-  border-radius: 10px;
-  margin: 0;
-  padding: 0;
-  background: none;
-  box-shadow: none;
+@media (min-width: 865.01px){
+  .project-image-container {
+    position: relative;
+    width: 500px;
+    flex-shrink: 0;
+    padding: 3px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #00f5ff, #00ff9d, #ffd500);
+    box-shadow: 0 0 15px rgba(0, 255, 200, 0.5);
+  }
+
+  .project-image {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top left;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+  }
 }
 
-.project-image-container {
-  position: relative;
-  width: 500px;
-  flex-shrink: 0;
-  padding: 3px;
-  border-radius: 12px;
-  background: linear-gradient(90deg, #00f5ff, #00ff9d, #ffd500);
-  box-shadow: 0 0 15px rgba(0, 255, 200, 0.5);
+@media (max-width: 865px){
+  .project-image {
+  display: none;
+  pointer-events: none;
+  }
 }
+
+
+
 
 
 .project-text {

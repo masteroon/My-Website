@@ -35,7 +35,7 @@ function generateProjectHTML(projects){
       projectsHTML+= `
       <a class="project-link" target="_blank" href="${project.link}">
         <div class="project-container">
-          <p class="project-title  glow-text">${project.displayName}</p>
+          <p class="project-title  ${project.glow}-glow">${project.displayName}</p>
           <div class="project-content">
             <div class="project-image-container">
               <div class="tooltip ${project.tooltip}">
