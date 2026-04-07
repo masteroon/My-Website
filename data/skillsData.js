@@ -1,5 +1,6 @@
 export const skills = [
   {
+    id: 0,
     title: 'Frontend',
     skills: [
       'HTML',
@@ -12,8 +13,10 @@ export const skills = [
     tools: [
       'VS Code',
       'Chrome DevTools'
-    ]
+    ],
+    isExpanded: false
   }, {
+    id: 1,
     title: 'Backend & Integrations',
     skills: [
       'REST APIs',
@@ -31,8 +34,10 @@ export const skills = [
       'Postman',
       'DBeaver',
       'Zapier'
-    ]
+    ],
+    isExpanded: false
   }, {
+    id: 2,
     title: 'Testing & Debugging',
     skills: [
       'Unit Testing',
@@ -41,15 +46,18 @@ export const skills = [
     ],
     tools: [
       'Jasmine'
-    ]
+    ],
+    isExpanded: false
   }, {
+    id: 3,
     title: 'Learning Now',
     skills: [
-      'Backend Fundamentals (Node.js, server-side logic)',
-      'Databases (SQL basics, data modeling)',
+      'Backend Fundamentals',
+      'Databases Fundamentals',
       'Authentication & API Security',
-      'PixiJS (2D rendering & game development)',
-      'Advanced JavaScript (architecture & async patterns)'
-    ] 
+      'PixiJS',
+      'Advanced JavaScript'
+    ] ,
+    isExpanded: false
   }
 ];
