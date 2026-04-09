@@ -46,7 +46,6 @@ export function generateHeader(){
       `
       <div class="${item.name}-icon-button-container">
         <a class="header-link js-header-button" data-button-name = "${item.name}" href="${item.name}.html">
-
           <img class="header-icon" src="/Icons/header/${item.name}_white.svg">
           <img class="header-icon-active" src="/Icons/header/${item.name}.svg">
             <p class="header-text">

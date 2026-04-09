@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>
+      Skills
+    </title>
+    
+    <link rel="stylesheet" href="/Styles/general.css">
+    <link rel="stylesheet" href="/Styles/header.css">
+    <link rel="stylesheet" href="/Styles/resume.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Unlock&display=swap" rel="stylesheet">
+    
+  </head>
+
+  <body>
+    <header class="header js-header"></header>
+    <main class="resume-page"> 
+      <p class="resume-page-title">
+        My Resume
+      </p>
+      <div>
+        <section class="resume-section">
+          
+          <div class="generate-resume-container">
+            <div class="select-box-container">
+            <div class="language-container">
+              <label for="language">Language</label>
+              <select id="language">
+                <option value="en">English</option>
+                <option value="he">Hebrew</option>
+              </select>
+            </div>
+            
+            <div class="file-type-container">
+              <label for="fileType">File Type</label>
+              <select id="fileType">
+                <option value="pdf">PDF</option>
+                <option value="docx">Word</option>
+              </select>
+            </div>
+          </div>
+            <button class="download-button js-download-button">Download</button>
+          </div>
+          <iframe 
+            class="pdf-viewer js-pdf-viewer"
+            src="/files/resume/Oron_Bar_EN.pdf" 
+           >
+          </iframe>
+        </section>
+      </div>
+         
+      
+
+    </main>
+
+
+    <script type="module" src="/scripts/resume.js"></script>
+  </body>
+
+</html>
