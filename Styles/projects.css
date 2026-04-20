@@ -151,6 +151,9 @@
   display: none;
   pointer-events: none;
   }
+  .projects-page-title{
+    font-size: 56px;
+  }
 }
 
 

@@ -8,7 +8,6 @@
   right:0;
   left: 0;
   align-items: center;
-  justify-content: space-between;
   background-color: black;
   z-index: 200;
   background:
@@ -23,6 +22,14 @@
 
   border-bottom: 1px solid transparent;
 
+}
+
+.header-buttons-container{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 .website-title-container {
@@ -290,58 +297,6 @@
   
 }
 
-@media (max-width: 1040px) {
-  .header-icon {
-    display: inline;
-  }
-
-  .header-text {
-    display: none;
-  }
-
-  .about-icon-button-container:active .header-icon-active,
-  .experience-icon-button-container:active .header-icon-active,
-  .projects-icon-button-container:active .header-icon-active,
-  .skills-icon-button-container:active .header-icon-active,
-  .resume-icon-button-container:active .header-icon-active,
-  .contact-icon-button-container:active .header-icon-active,
-  .linkedin-icon-button-container:active .header-icon-active
-  {
-    display:inline;
-  }
-
-  .about-icon-button-container:active .header-icon,
-  .experience-icon-button-container:active .header-icon,
-  .projects-icon-button-container:active .header-icon,
-  .skills-icon-button-container:active .header-icon,
-  .resume-icon-button-container:active .header-icon,
-  .contact-icon-button-container:active .header-icon,
-  .linkedin-icon-button-container:active .header-icon {
-    display:none;
-  }
-
-  .about-active-button .header-icon {
-    display: none;
-  }
-
-  .about-active-button .header-icon-active {
-    display: inline;
-  }
-
-}
-
-@media (max-width: 1040px) and (min-width: 900px) {
-    .header-item-tooltip{
-    font-size: 12px;
-  }
-}
-
-@media (max-width:899.99px) {
-  .header-item-tooltip {
-    font-size: 8px;
-  }
-}
-
 .header-link{
   text-decoration: none;
   color: white;
@@ -353,6 +308,10 @@
   gap: 8px;
 
 }
+
+
+
+
 
 .header-link:active{
   color: black;
@@ -452,4 +411,170 @@
   background-color: rgb(255, 212, 0);
 }
 
+.hamburger-menu{
+  padding: 0;
+  margin: 0;
+  background-color: purple;
+  border: none;
+  cursor: pointer;
+  display: none;
+  pointer-events: none;
+}
+
+.hamburger-icon{
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+
+@media (max-width: 1040px) {
+  .header-icon {
+    display: inline;
+  }
+
+  .header-text {
+    display: none;
+  }
+
+  .about-icon-button-container:active .header-icon-active,
+  .experience-icon-button-container:active .header-icon-active,
+  .projects-icon-button-container:active .header-icon-active,
+  .skills-icon-button-container:active .header-icon-active,
+  .resume-icon-button-container:active .header-icon-active,
+  .contact-icon-button-container:active .header-icon-active,
+  .linkedin-icon-button-container:active .header-icon-active
+  {
+    display:inline;
+  }
+
+  .about-icon-button-container:active .header-icon,
+  .experience-icon-button-container:active .header-icon,
+  .projects-icon-button-container:active .header-icon,
+  .skills-icon-button-container:active .header-icon,
+  .resume-icon-button-container:active .header-icon,
+  .contact-icon-button-container:active .header-icon,
+  .linkedin-icon-button-container:active .header-icon {
+    display:none;
+  }
+
+  .about-active-button .header-icon {
+    display: none;
+  }
+
+  .about-active-button .header-icon-active {
+    display: inline;
+  }
+
+}
+
+@media (max-width: 1040px) and (min-width: 900px) {
+    .header-item-tooltip{
+    font-size: 12px;
+  }
+  
+}
+
+@media (max-width:899.99px) {
+  .header-item-tooltip {
+    font-size: 8px;
+  }
+}
+
+@media(max-width: 768px ) and (min-width: 320px){
+  .website-title-container{
+    padding: 0;
+    padding-top: 20px;
+    height: 80px;
+    position: relative;
+  }
+  
+  .website-title {
+    font-size: 48px;
+
+  }
+  .header {
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: auto;
+    height: 100px;
+    background-color: black;
+  }
+
+  .header-title-button-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+ .header-buttons-container {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    flex-direction: column;
+  }
+  
+  .about-icon-button-container,
+  .experience-icon-button-container,
+  .projects-icon-button-container,
+  .skills-icon-button-container,
+  .resume-icon-button-container,
+  .contact-icon-button-container,
+  .linkedin-icon-button-container {
+    width: 100%;
+  }
+  
+  .header-link {
+    width: 100%;
+    justify-content: start;
+    padding-left: 30px;
+  }
+
+  .header-icon {
+    display: inline;
+    margin-right: 25px;
+  }
+
+  .header-text {
+    display: inline;
+    font-size: 28px;
+  }
+
+  .about-icon-button-container:hover .header-item-tooltip,
+  .experience-icon-button-container:hover .header-item-tooltip,
+  .projects-icon-button-container:hover .header-item-tooltip,
+  .skills-icon-button-container:hover .header-item-tooltip,
+  .resume-icon-button-container:hover .header-item-tooltip,
+  .contact-icon-button-container:hover .header-item-tooltip,
+  .linkedin-icon-button-container:hover .header-item-tooltip{
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .hamburger-menu{
+    padding: 20px;
+    pointer-events: all;
+    margin: 0;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 15px;
+    display: inline;
+    cursor: pointer;
+  }
+  
+}
+
+.hidden {
+  display: none;
+}
 

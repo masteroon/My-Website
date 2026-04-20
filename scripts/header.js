@@ -33,19 +33,27 @@ generateHeader();
 
 export function generateHeader(){
   let html = `
+    <div class="header-title-button-container">
+    <button class="hamburger-menu js-hamburger-menu">
+      <img class="hamburger-icon" src="/Icons/header/hamburger_white.svg">
+    </button>
     <a href="website.html">
       <div class="website-title-container">
         <p class="website-title">
           Oron Bar
         </p>
+        
       </div>
     </a>
+    </div>
+
+    <div class="header-buttons-container">
     `
     headerButtons.forEach(item => {
       html += 
       `
       <div class="${item.name}-icon-button-container">
-        <a class="header-link js-header-button" data-button-name = "${item.name}" href="${item.name}.html">
+        <a class="header-link js-header-button" target="${getTargetRef(item)}" data-button-name = "${item.name}" href="${getButtonHref(item)}.html">
           <img class="header-icon" src="/Icons/header/${item.name}_white.svg">
           <img class="header-icon-active" src="/Icons/header/${item.name}.svg">
             <p class="header-text">
@@ -58,24 +66,65 @@ export function generateHeader(){
       </div>
       `
     });
-
+  
+    html += `</div>`
   document.querySelector('.js-header')
     .innerHTML = html;
   
   toggleButton();
+
+  handleResponsiveMenu();
+
+  document.querySelector('.js-hamburger-menu')
+    .addEventListener('click',()=>{
+      toggleHamburgerMenu();
+    });
+
+  window.addEventListener('resize', handleResponsiveMenu);
+}
+
+function getButtonHref(button){
+  if(button.name !== 'linkedin')
+    return button.name;
+  else 
+    return 'https://www.linkedin.com/in/oron-bar-b985a1161/';
+}
+
+function getTargetRef(button){
+   if(button.name !== 'linkedin')
+    return '_self';
+  else 
+    return '_target';
 }
 
 function toggleButton() {
   const currentPage = window.location.pathname.split('/').pop();
   document.querySelectorAll('.js-header-button').forEach((button) => {
     const href = button.getAttribute('href');
+   
     const container = button.parentElement;
-    const buttonName = button.dataset.buttonName;
-
+    const buttonName = button.dataset.buttonName; 
+    console.log(container);
+    console.log(buttonName);
     if (href === currentPage) {
       container.classList.add(`${buttonName}-active-button`);
     }
+   
   });
 
 }
 
+function toggleHamburgerMenu(){
+  const buttonsElement = document.querySelector('.header-buttons-container');
+  buttonsElement.classList.toggle('hidden');
+}
+
+function handleResponsiveMenu() {
+  const buttonsElement = document.querySelector('.header-buttons-container');
+
+  if (window.innerWidth <= 768) {
+    buttonsElement.classList.add('hidden');
+  } else {
+    buttonsElement.classList.remove('hidden');
+  }
+}

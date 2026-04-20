@@ -179,6 +179,10 @@
     border-radius: 5px;
     padding: 10px;
   }
+  .skills-page-title{
+    font-size: 56px;
+    margin-bottom: 70px;
+  }
 
   .skills-category{
     font-size: 32px;

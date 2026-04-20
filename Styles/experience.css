@@ -155,6 +155,67 @@
   text-decoration: none;
 }
 
+@media (min-width: 481px) and (max-width:700px){
+  .experience-page-title{
+    font-size: 56px;
+  }
+  .main-category-text {
+    font-size: 36px;
+  }
+  .inner-category-text{
+    font-size: 28px;
+  }
+  .experience-text{
+    font-size: 14px;
+  }
+  .company-logo{
+    height: 40px;
+    width: 150px;
+  }
+
+  .html-css-logo{
+    height: 80px;
+    width: 120px;
+  }
+
+  .javascript-logo{
+    height: 80px;
+  }
+
+
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+ .experience-page-title{
+    font-size: 48px;
+  }
+  .main-category-text {
+    font-size: 26px;
+  }
+  .inner-category-text{
+    font-size: 24px;
+  }
+  .experience-text{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+  }
+  
+  .company-logo{
+    height: 40px;
+    width: 150px;
+  }
+
+  .html-css-logo{
+    height: 80px;
+    width: 120px;
+  }
+
+  .javascript-logo{
+    height: 80px;
+  }
+}
+
 .hidden{
   display:none;
 }
