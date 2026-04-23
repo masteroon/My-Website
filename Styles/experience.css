@@ -35,6 +35,19 @@
   color: white;
   cursor: pointer;
   margin-bottom: 20px;
+  transition: display 0.3s ease-in-out,
+    pointer-events 0.3s ease-in-out;
+}
+
+.main-category-button:hover .main-category-image {
+  display: none;
+  pointer-events: none;
+}
+
+.main-category-button:hover .main-category-image-glow,
+.main-category-button:hover .main-category-education-image-glow {
+  display: inline-block;
+  pointer-events: all;
 }
 
 .text-decoration{
@@ -43,8 +56,12 @@
 }
 
 
-.main-category-image{
+.main-category-image,
+.main-category-image-glow,
+.main-category-education-image-glow {
   height: 100px;
+  width: auto;
+  margin-top: 0;
 }
 
 .main-category-text {
@@ -53,8 +70,6 @@
 }
 
 .glow-text{
-  color: #fff; 
-  text-shadow: 0 0 5px white; 
   transition: text-shadow 0.3s ease-in-out;
 }
 

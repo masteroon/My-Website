@@ -10,12 +10,17 @@ function generateExperiencePage(){
 
   workButton.addEventListener('click',()=>{
     workButton.classList.toggle('text-decoration');
+    workButton.classList.toggle('glow-text');
     experienceButtons.forEach((expButton)=>{
       const buttonType = expButton.dataset.buttonType;
       if(buttonType === 'work'){
         expButton.classList.toggle('hidden');
       }
     });
+    document.querySelectorAll('.js-inner-category-text')
+      .forEach(expButtonText=>{
+        expButtonText.classList.toggle('glow-text');
+      });
     const newButtonText =  toggleButtonText(workButton.innerText);
     workButton.innerHTML = newButtonText;
 
@@ -23,6 +28,8 @@ function generateExperiencePage(){
 
   educationButton.addEventListener('click', ()=>{
     educationButton.classList.toggle('text-decoration');
+    educationButton.classList.toggle('glow-text');
+
     experienceButtons.forEach((expButton)=>{
       const buttonType = expButton.dataset.buttonType;
       if(buttonType === 'education'){

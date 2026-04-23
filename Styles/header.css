@@ -36,13 +36,14 @@
   Font-family: Arial;
   font-weight: Bold;
   font-size: 36px;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 185px;
 }
 
 .website-title {
   display: inline-block;
-  font-family: Arial;
+  font-family: Audiowide, Arial;
   font-weight: bold;
   font-size: 36px;
 
@@ -493,6 +494,7 @@
   
   .website-title {
     font-size: 48px;
+    width: 300px;
 
   }
   .header {
