@@ -14,7 +14,7 @@ function renderShop(){
     card.cost = setCardCost(card.rarity);
     html +=`
     <div class = "js-card shop-card ${card.rarity}-card" data-js-card-id="${card.id}">
-      <img class="shop-card-image" src="./images/Spell Images/${card.id}-spell.png">
+      <img class="shop-card-image" src="./Images/Spell Images/${card.id}-spell.png">
       <div class="shop-card-description">
         <p class="rarity-title">${card.rarity.toUpperCase()}</p>
         <p class="price-title">Price: <span class="card-cost">${card.cost} &#129689;</span></p>

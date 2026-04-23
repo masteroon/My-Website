@@ -54,7 +54,7 @@ export const projects = [
     tech: ['HTML', 'CSS', 'JavaScript', 'Jasmine'],
     size: 'large',
     link: 'https://github.com/masteroon/Amazon-clone/tree/main/javascript-amazon-project',
-    img: './projects/Projects Images/amazon.png',
+    img: new URL('../projects/Projects Images/amazon.png', import.meta.url).href,
     glow: 'orange'
   },
   {
@@ -69,8 +69,8 @@ export const projects = [
     ],
     tech: ['HTML', 'CSS', 'JavaScript'],
     size: 'small',
-    link: './projects/Spell Deck clicker/main.html',
-    img: './projects/Projects Images/spell-deck-clicker.png',
+    link: new URL('../projects/Spell Deck clicker/main.html', import.meta.url).href,
+    img: new URL('../projects/Projects Images/spell-deck-clicker.png', import.meta.url).href,
     glow: 'cyan'
 
   },
@@ -86,8 +86,8 @@ export const projects = [
     ],
     tech: ['HTML', 'CSS', 'JavaScript'],
     size: 'small',
-    link: './projects/Rock Paper Scissors/Final/rock-paper-scissors.html',
-    img: './projects/Projects Images/rock-paper-scissors.png',
+    link: new URL('../projects/Rock Paper Scissors/Final/rock-paper-scissors.html', import.meta.url).href,
+    img: new URL('../projects/Projects Images/rock-paper-scissors.png', import.meta.url).href,
     glow: 'purple'
   },
   {
@@ -103,7 +103,7 @@ export const projects = [
     tech: ['HTML', 'CSS'],
     size: 'large',
     link: 'https://github.com/masteroon/youtube-clone',
-    img: './projects/Projects Images/youtube.png',
+    img: new URL('../projects/Projects Images/youtube.png', import.meta.url).href,
     glow: 'red'
   },
   {
@@ -118,8 +118,8 @@ export const projects = [
     ],
     tech: ['HTML', 'CSS', 'JavaScript'],
     size: 'small',
-    link: './projects/Calculator/calculator.html',
-    img: './projects/Projects Images/calculator.png',
+    link: new URL('../projects/Calculator/calculator.html', import.meta.url).href,
+    img: new URL('../projects/Projects Images/calculator.png', import.meta.url).href,
     glow: 'blue'
   }
 ];

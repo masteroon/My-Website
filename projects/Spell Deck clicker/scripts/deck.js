@@ -145,7 +145,7 @@ function renderBoard(){
 
     html += `
     <div class = "js-card card ${card.rarity}-card" data-js-card-id="${card.id}">
-      <img class="card-image" src="./images/Spell Images/${card.id}-spell.png">
+      <img class="card-image" src="./Images/Spell Images/${card.id}-spell.png">
       <p class = "rarity-title">${card.rarity.toUpperCase()}</p>
       <button class="js-card-button card-button" data-card-id="${card.id}" >Use Card</button>
     </div>
@@ -232,7 +232,7 @@ function renderDeckList(eDeck) {
   eDeck.forEach(card => {
     boardHTML += `
     <div class = "card edit-card js-card ${card.rarity}-card" data-js-card-id="${card.id}">
-      <img class="shop-card-image" src="./images/Spell Images/${card.id}-spell.png">
+      <img class="shop-card-image" src="./Images/Spell Images/${card.id}-spell.png">
       <p class="rarity-title">${card.rarity.toUpperCase()}</p>
       <p class="occurances">x${card.inDeck}</p>
       <div class="card-description edit-card-description">${card.description}</div>
