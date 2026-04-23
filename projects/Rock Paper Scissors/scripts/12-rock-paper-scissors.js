@@ -174,8 +174,8 @@ let score = loadFromLocalStorage('score');
       document.querySelector('.js-result').innerHTML = result;
       document.querySelector('.js-picks')
         .innerHTML = `You
-        <img class="move-icon" src="Icons/${playerMove}-emoji.png">
-        <img class="move-icon" src="Icons/${computerMove}-emoji.png">
+        <img class="move-icon" src="./Icons/${playerMove}-emoji.png">
+        <img class="move-icon" src="./Icons/${computerMove}-emoji.png">
       Computer  `;
 
     }
