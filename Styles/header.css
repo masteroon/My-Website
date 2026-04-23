@@ -513,7 +513,7 @@
     align-items: center;
   }
 
- .header-buttons-container {
+  .header-buttons-container {
     position: fixed;
     top: 100px;
     right: 0;
@@ -522,8 +522,9 @@
     width: 100%;
     background-color: black;
     flex-direction: column;
+    overflow-y: auto;
   }
-  
+    
   .about-icon-button-container,
   .experience-icon-button-container,
   .projects-icon-button-container,
