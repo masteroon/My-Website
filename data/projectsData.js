@@ -6,7 +6,7 @@
   description:'Full Amazon e-commerce flow replication built with HTML, CSS, and modular vanilla JavaScript. Includes product listing, cart management, checkout system, order history, and tracking pages, with state persistence via localStorage and business logic validated using Jasmine unit tests.',
   size: 'large',
   link: 'https://github.com/masteroon/Amazon-clone/tree/main/javascript-amazon-project',
-  img: '../projects/Projects Images/amazon.png'
+  img: './projects/Projects Images/amazon.png'
 
 },{
   name: 'spell-deck-clicker',
@@ -14,21 +14,21 @@
   description:'Browser-based deck-building clicker game built with vanilla JavaScript: modular card architecture with dynamic effect functions, weighted rarity generation system, persistent state management via localStorage, deck editing and collection system, shop economy, timed game loop, and CSS-driven animation effects.',
   size: 'small',
   link: '../projects/Spell Deck clicker/main.html',
-  img: '../projects/Projects Images/spell-deck-clicker.png'
+  img: './projects/Projects Images/spell-deck-clicker.png'
 },{
   name: 'rock-paper-scissors',
   displayName: 'Rock Paper Scissors',
   description: 'Interactive Rock Paper Scissors app using vanilla JavaScript: DOM updates, event listeners (click + keydown), localStorage state persistence, interval-based Auto Play toggle, and UI confirmation flow for resetting stats.',
   size: 'small',
   link: '../projects/Rock Paper Scissors/Final/rock-paper-scissors.html',
-  img: '../projects/Projects Images/rock-paper-scissors.png'
+  img: './projects/Projects Images/rock-paper-scissors.png'
 },{
   name: 'youtube-clone',
   displayName: 'YouTube Clone Website',
   description: 'This is a project in which I recreated YouTube using HTML and CSS (no javascript)',
   size: 'large',
   link: 'https://github.com/masteroon/youtube-clone',
-  img: '../projects/Projects Images/youtube.png'
+  img: './projects/Projects Images/youtube.png'
 
 },{
   name: 'calculator',
@@ -36,7 +36,7 @@
   description: 'A responsive calculator application built with HTML, CSS, and vanilla JavaScript, featuring dynamic DOM manipulation and event handling.',
   size: 'small',
   link: '../projects/Calculator/calculator.html',
-  img: '../projects/Projects Images/calculator.png'
+  img: './projects/Projects Images/calculator.png'
 
 }];*/
 
@@ -54,7 +54,7 @@ export const projects = [
     tech: ['HTML', 'CSS', 'JavaScript', 'Jasmine'],
     size: 'large',
     link: 'https://github.com/masteroon/Amazon-clone/tree/main/javascript-amazon-project',
-    img: '../projects/Projects Images/amazon.png',
+    img: './projects/Projects Images/amazon.png',
     glow: 'orange'
   },
   {
@@ -70,7 +70,7 @@ export const projects = [
     tech: ['HTML', 'CSS', 'JavaScript'],
     size: 'small',
     link: './projects/Spell Deck clicker/main.html',
-    img: '../projects/Projects Images/spell-deck-clicker.png',
+    img: './projects/Projects Images/spell-deck-clicker.png',
     glow: 'cyan'
 
   },
@@ -87,7 +87,7 @@ export const projects = [
     tech: ['HTML', 'CSS', 'JavaScript'],
     size: 'small',
     link: './projects/Rock Paper Scissors/Final/rock-paper-scissors.html',
-    img: '../projects/Projects Images/rock-paper-scissors.png',
+    img: './projects/Projects Images/rock-paper-scissors.png',
     glow: 'purple'
   },
   {
@@ -103,7 +103,7 @@ export const projects = [
     tech: ['HTML', 'CSS'],
     size: 'large',
     link: 'https://github.com/masteroon/youtube-clone',
-    img: '../projects/Projects Images/youtube.png',
+    img: './projects/Projects Images/youtube.png',
     glow: 'red'
   },
   {
@@ -119,7 +119,7 @@ export const projects = [
     tech: ['HTML', 'CSS', 'JavaScript'],
     size: 'small',
     link: './projects/Calculator/calculator.html',
-    img: '../projects/Projects Images/calculator.png',
+    img: './projects/Projects Images/calculator.png',
     glow: 'blue'
   }
 ];

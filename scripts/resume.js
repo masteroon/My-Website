@@ -14,7 +14,7 @@ function activateResumePage (){
   downloadButtonElem.addEventListener('click', ()=>{
     const language = languageSelect.value;
     const fileType = fileTypeSelect.value;
-    const filePath = `/files/resume/Oron_Bar_${language}.${fileType}`;
+    const filePath = `./files/resume/Oron_Bar_${language.toUpperCase()}.${fileType}`;
 
     const link = document.createElement('a');
     link.href = filePath;
