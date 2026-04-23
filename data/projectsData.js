@@ -54,7 +54,7 @@ export const projects = [
     tech: ['HTML', 'CSS', 'JavaScript', 'Jasmine'],
     size: 'large',
     link: 'https://github.com/masteroon/Amazon-clone/tree/main/javascript-amazon-project',
-    img: './projects/Projects Images/amazon.png',
+    img: '../projects/Projects Images/amazon.png',
     glow: 'orange'
   },
   {
@@ -70,7 +70,7 @@ export const projects = [
     tech: ['HTML', 'CSS', 'JavaScript'],
     size: 'small',
     link: './projects/Spell Deck clicker/main.html',
-    img: './projects/Projects Images/spell-deck-clicker.png',
+    img: '../projects/Projects Images/spell-deck-clicker.png',
     glow: 'cyan'
 
   },
@@ -87,7 +87,7 @@ export const projects = [
     tech: ['HTML', 'CSS', 'JavaScript'],
     size: 'small',
     link: './projects/Rock Paper Scissors/Final/rock-paper-scissors.html',
-    img: './projects/Projects Images/rock-paper-scissors.png',
+    img: '../projects/Projects Images/rock-paper-scissors.png',
     glow: 'purple'
   },
   {
@@ -103,7 +103,7 @@ export const projects = [
     tech: ['HTML', 'CSS'],
     size: 'large',
     link: 'https://github.com/masteroon/youtube-clone',
-    img: './projects/Projects Images/youtube.png',
+    img: '../projects/Projects Images/youtube.png',
     glow: 'red'
   },
   {
@@ -119,7 +119,7 @@ export const projects = [
     tech: ['HTML', 'CSS', 'JavaScript'],
     size: 'small',
     link: './projects/Calculator/calculator.html',
-    img: './projects/Projects Images/calculator.png',
+    img: '../projects/Projects Images/calculator.png',
     glow: 'blue'
   }
 ];
