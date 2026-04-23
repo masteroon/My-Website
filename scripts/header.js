@@ -53,7 +53,7 @@ export function generateHeader(){
       html += 
       `
       <div class="${item.name}-icon-button-container">
-        <a class="header-link js-header-button" target="${getTargetRef(item)}" data-button-name = "${item.name}" href="./${getButtonHref(item)}.html">
+        <a class="header-link js-header-button" target="${getTargetRef(item)}" data-button-name = "${item.name}" href="${getButtonHref(item)}.html">
           <img class="header-icon" src="./Icons/header/${item.name}_white.svg">
           <img class="header-icon-active" src="./Icons/header/${item.name}.svg">
             <p class="header-text">
@@ -85,7 +85,7 @@ export function generateHeader(){
 
 function getButtonHref(button){
   if(button.name !== 'linkedin')
-    return button.name;
+    return `./${button.name}`;
   else 
     return 'https://www.linkedin.com/in/oron-bar-b985a1161/';
 }
