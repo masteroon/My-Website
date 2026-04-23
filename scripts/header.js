@@ -35,9 +35,9 @@ export function generateHeader(){
   let html = `
     <div class="header-title-button-container">
     <button class="hamburger-menu js-hamburger-menu">
-      <img class="hamburger-icon" src="/Icons/header/hamburger_white.svg">
+      <img class="hamburger-icon" src="./Icons/header/hamburger_white.svg">
     </button>
-    <a href="website.html">
+    <a href="./index.html">
       <div class="website-title-container">
         <p class="website-title">
           Oron Bar
@@ -53,9 +53,9 @@ export function generateHeader(){
       html += 
       `
       <div class="${item.name}-icon-button-container">
-        <a class="header-link js-header-button" target="${getTargetRef(item)}" data-button-name = "${item.name}" href="${getButtonHref(item)}.html">
-          <img class="header-icon" src="/Icons/header/${item.name}_white.svg">
-          <img class="header-icon-active" src="/Icons/header/${item.name}.svg">
+        <a class="header-link js-header-button" target="${getTargetRef(item)}" data-button-name = "${item.name}" href="./${getButtonHref(item)}.html">
+          <img class="header-icon" src="./Icons/header/${item.name}_white.svg">
+          <img class="header-icon-active" src="./Icons/header/${item.name}.svg">
             <p class="header-text">
             ${item.name}
           </p>

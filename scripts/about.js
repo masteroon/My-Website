@@ -19,13 +19,13 @@ function renderAboutImages(){
     if(imageNumber < 4){
       imageElement.classList.remove(`about-image-shadow-${imageNumber}`);
       imageNumber++;
-      imageElement.src = `/Images/About Page/oron-${imageNumber}.png`;
+      imageElement.src = `./Images/About Page/oron-${imageNumber}.png`;
       imageElement.classList.add(`about-image-shadow-${imageNumber}`);
     }
     else {
       imageElement.classList.remove(`about-image-shadow-${imageNumber}`);
       imageNumber = 1;
-      imageElement.src = `/Images/About Page/oron-${imageNumber}.png`;
+      imageElement.src = `./Images/About Page/oron-${imageNumber}.png`;
       imageElement.classList.add(`about-image-shadow-${imageNumber}`);
     }
   }, 180);

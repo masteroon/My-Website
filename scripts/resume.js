@@ -31,7 +31,7 @@ function changePdfPreview(){
     const language = languageSelect.value;
 
     const iframeElement = document.querySelector('.js-pdf-viewer');
-    iframeElement.src = `/files/resume/Oron_Bar_${language}.pdf`;
+    iframeElement.src = `./files/resume/Oron_Bar_${language}.pdf`;
 
     
 } 
